@@ -24,12 +24,12 @@
                                     <constraint firstAttribute="height" constant="40" id="q8o-Aa-1vm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="路径排除">
+                                <state key="normal" title="动态字体">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="didClickExclusionPathsBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2m5-8H-cF0"/>
+                                    <action selector="didClickDynamicTypeBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GuJ-y5-FHa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ja-ne-0ZO">
@@ -39,10 +39,13 @@
                                     <constraint firstAttribute="height" constant="40" id="Iyh-Ob-G1i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="动态字体">
+                                <state key="normal" title="路径排除">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didClickExclusionPathsBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XbT-Om-tOS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -58,7 +61,8 @@
                     <navigationItem key="navigationItem" title="Text Kit Demo" id="W2C-JM-996"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="exclusionPathsBtn" destination="X5P-YE-doR" id="8gH-hK-10G"/>
+                        <outlet property="dynamicTypeBtn" destination="X5P-YE-doR" id="eC2-Ck-8FP"/>
+                        <outlet property="exclusionPathsBtn" destination="7Ja-ne-0ZO" id="pgN-cY-daK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

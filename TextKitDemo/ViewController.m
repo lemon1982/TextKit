@@ -29,4 +29,10 @@
     ExclusionPathsViewController *exclusionPathsVC = [[ExclusionPathsViewController alloc] init];
     [self.navigationController pushViewController:exclusionPathsVC animated:YES];
 }
+
+- (IBAction)didClickDynamicTypeBtn:(UIButton *)sender
+{
+    DynamicTypeViewController *dynamicTypeVC = [[DynamicTypeViewController alloc] init];
+    [self.navigationController pushViewController:dynamicTypeVC animated:YES];
+}
 @end

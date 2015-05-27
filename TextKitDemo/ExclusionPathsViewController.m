@@ -52,10 +52,10 @@
 
 - (UIBezierPath *)translatedBezierPath
 {
-    CGRect butterflyImageRect = [self.textView convertRect:self.imageView.frame fromView:self.view];
-    UIBezierPath *newButterflyPath = [UIBezierPath bezierPathWithRect:butterflyImageRect];
+    CGRect imageRect = [self.textView convertRect:self.imageView.frame fromView:self.textView];
+    UIBezierPath *imagePath = [UIBezierPath bezierPathWithRect:imageRect];
     
-    return newButterflyPath;
+    return imagePath;
 }
 
 - (void)imagePanned:(id)sender

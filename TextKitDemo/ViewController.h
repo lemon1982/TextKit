@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ExclusionPathsViewController.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *exclusionPathsBtn;
+
+- (IBAction)didClickExclusionPathsBtn:(UIButton *)sender;
 
 @end
 

@@ -24,4 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)didClickExclusionPathsBtn:(UIButton *)sender
+{
+    ExclusionPathsViewController *exclusionPathsVC = [[ExclusionPathsViewController alloc] init];
+    [self.navigationController pushViewController:exclusionPathsVC animated:YES];
+}
 @end

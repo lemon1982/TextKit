@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0473EDB71B15A581004B4C24 /* DynamicTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0473EDB61B15A581004B4C24 /* DynamicTypeViewController.m */; };
+		04A3A7BC1B16F41300B5F3A7 /* DynamicStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3A7BB1B16F41300B5F3A7 /* DynamicStorageViewController.m */; };
+		04A3A7BF1B16F60A00B5F3A7 /* MarkupTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3A7BE1B16F60A00B5F3A7 /* MarkupTextStorage.m */; };
+		04A3A7C11B170A9400B5F3A7 /* content.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04A3A7C01B170A9400B5F3A7 /* content.txt */; };
 		04D8FDFC1B146E7800A28BEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8FDFB1B146E7800A28BEF /* main.m */; };
 		04D8FDFF1B146E7800A28BEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8FDFE1B146E7800A28BEF /* AppDelegate.m */; };
 		04D8FE021B146E7800A28BEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8FE011B146E7800A28BEF /* ViewController.m */; };
@@ -32,6 +35,11 @@
 /* Begin PBXFileReference section */
 		0473EDB51B15A581004B4C24 /* DynamicTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTypeViewController.h; sourceTree = "<group>"; };
 		0473EDB61B15A581004B4C24 /* DynamicTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTypeViewController.m; sourceTree = "<group>"; };
+		04A3A7BA1B16F41300B5F3A7 /* DynamicStorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicStorageViewController.h; sourceTree = "<group>"; };
+		04A3A7BB1B16F41300B5F3A7 /* DynamicStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicStorageViewController.m; sourceTree = "<group>"; };
+		04A3A7BD1B16F60A00B5F3A7 /* MarkupTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkupTextStorage.h; sourceTree = "<group>"; };
+		04A3A7BE1B16F60A00B5F3A7 /* MarkupTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkupTextStorage.m; sourceTree = "<group>"; };
+		04A3A7C01B170A9400B5F3A7 /* content.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = content.txt; sourceTree = "<group>"; };
 		04D8FDF61B146E7800A28BEF /* TextKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D8FDFA1B146E7800A28BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D8FDFB1B146E7800A28BEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +107,10 @@
 				04D8FE1F1B1488A000A28BEF /* ExclusionPathsViewController.h */,
 				04D8FE201B1488A000A28BEF /* ExclusionPathsViewController.m */,
 				04D8FE031B146E7800A28BEF /* Main.storyboard */,
+				04A3A7BA1B16F41300B5F3A7 /* DynamicStorageViewController.h */,
+				04A3A7BB1B16F41300B5F3A7 /* DynamicStorageViewController.m */,
+				04A3A7BD1B16F60A00B5F3A7 /* MarkupTextStorage.h */,
+				04A3A7BE1B16F60A00B5F3A7 /* MarkupTextStorage.m */,
 				04D8FE061B146E7800A28BEF /* Images.xcassets */,
 				04D8FE081B146E7800A28BEF /* LaunchScreen.xib */,
 				04D8FDF91B146E7800A28BEF /* Supporting Files */,
@@ -109,6 +121,7 @@
 		04D8FDF91B146E7800A28BEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04A3A7C01B170A9400B5F3A7 /* content.txt */,
 				04D8FDFA1B146E7800A28BEF /* Info.plist */,
 				04D8FDFB1B146E7800A28BEF /* main.m */,
 			);
@@ -224,6 +237,7 @@
 				04D8FE251B148B4100A28BEF /* image-01@2x.png in Resources */,
 				04D8FE0A1B146E7800A28BEF /* LaunchScreen.xib in Resources */,
 				04D8FE071B146E7800A28BEF /* Images.xcassets in Resources */,
+				04A3A7C11B170A9400B5F3A7 /* content.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,10 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A3A7BF1B16F60A00B5F3A7 /* MarkupTextStorage.m in Sources */,
 				04D8FE021B146E7800A28BEF /* ViewController.m in Sources */,
 				0473EDB71B15A581004B4C24 /* DynamicTypeViewController.m in Sources */,
 				04D8FDFF1B146E7800A28BEF /* AppDelegate.m in Sources */,
 				04D8FE211B1488A000A28BEF /* ExclusionPathsViewController.m in Sources */,
+				04A3A7BC1B16F41300B5F3A7 /* DynamicStorageViewController.m in Sources */,
 				04D8FDFC1B146E7800A28BEF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -47,13 +47,31 @@
                                     <action selector="didClickExclusionPathsBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XbT-Om-tOS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZE-TR-cOZ">
+                                <rect key="frame" x="50" y="270" width="220" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6oc-W7-DXr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="动态文本格式化和存储">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickDynamicStorageBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hXt-fH-31b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7Ja-ne-0ZO" firstAttribute="top" secondItem="X5P-YE-doR" secondAttribute="bottom" priority="250" constant="40" id="2IP-3h-23q"/>
                             <constraint firstAttribute="trailing" secondItem="7Ja-ne-0ZO" secondAttribute="trailing" constant="50" id="5LL-ly-DoM"/>
+                            <constraint firstAttribute="trailing" secondItem="BZE-TR-cOZ" secondAttribute="trailing" constant="50" id="5O4-Bl-u8F"/>
+                            <constraint firstItem="BZE-TR-cOZ" firstAttribute="top" secondItem="7Ja-ne-0ZO" secondAttribute="bottom" constant="40" id="Glb-yE-IPr"/>
                             <constraint firstItem="X5P-YE-doR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="O3E-0Z-qXM"/>
                             <constraint firstAttribute="trailing" secondItem="X5P-YE-doR" secondAttribute="trailing" constant="50" id="jeW-q9-m9w"/>
+                            <constraint firstItem="BZE-TR-cOZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="qnP-p3-nBC"/>
                             <constraint firstItem="X5P-YE-doR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="110" id="sOJ-Qc-7q0"/>
                             <constraint firstItem="7Ja-ne-0ZO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="x1f-Zd-yex"/>
                         </constraints>
@@ -61,6 +79,7 @@
                     <navigationItem key="navigationItem" title="Text Kit Demo" id="W2C-JM-996"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="DynamicStorageBtn" destination="BZE-TR-cOZ" id="fF1-Mc-00L"/>
                         <outlet property="dynamicTypeBtn" destination="X5P-YE-doR" id="eC2-Ck-8FP"/>
                         <outlet property="exclusionPathsBtn" destination="7Ja-ne-0ZO" id="pgN-cY-daK"/>
                     </connections>

@@ -35,4 +35,10 @@
     DynamicTypeViewController *dynamicTypeVC = [[DynamicTypeViewController alloc] init];
     [self.navigationController pushViewController:dynamicTypeVC animated:YES];
 }
+
+- (IBAction)didClickDynamicStorageBtn:(UIButton *)sender
+{
+    DynamicStorageViewController *dynamicStorageVC = [[DynamicStorageViewController alloc] init];
+    [self.navigationController pushViewController:dynamicStorageVC animated:YES];
+}
 @end
